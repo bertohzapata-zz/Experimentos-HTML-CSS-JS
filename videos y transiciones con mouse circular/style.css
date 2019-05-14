@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Oxygen', sans-serif;
     cursor: none;
@@ -12,6 +11,9 @@ body {
     /* background: #eeeeee; */
     /* width: 100vw; */
     overflow-x: hidden;
+}
+a {
+    cursor: none;
 }
 h1 {
     font-family: 'Anton', sans-serif;
@@ -31,18 +33,22 @@ nav {
 div#cursor {
     z-index: 1;
     position: absolute;
-    width: 1rem;
-    height: 1rem;
+    /* width: 1rem;
+    height: 1rem; */
     /* border: 2px solid #393e46; */
     background: #393e46;
     /* transition: 0.1s; */
     border-radius: 50%;
-    transition-duration: 90ms;
-    transition-timing-function: ease-out;
+    /* transition-duration: 90ms;
+    transition-timing-function: ease-out; */
     pointer-events: none;
-    /* transition: .09s ease-out; */
+    transition: .15s ease-out;
 }
-.cursorHover {
+.cursorHover1 {
+    width: 1rem;
+    height: 1rem;
+}
+.cursorHover2 {
     width: 2rem;
     height: 2rem;
 }

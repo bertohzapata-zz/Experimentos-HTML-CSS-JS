@@ -3,7 +3,11 @@ var cursor = document.getElementById('cursor');
 
 document.addEventListener('mousemove' , function (e){
     /* console.log(e); */
-    cursor.setAttribute("style", "top: " + (e.pageY -8) + "px; left: " + (e.pageX -8) + "px");
+    c2Cursor = getComputedStyle(cursor);
+    var cWidth = c2Cursor.width;
+    var pxCursor = cWidth.slice(0,6);
+    pxCursor = Math.round(pxCursor);
+    console.log(cursor.setAttribute("style", "top: " + (e.pageY - (pxCursor/2)) + "px; left: " + (e.pageX -(pxCursor/2)) + "px"));
     /* var x = e.clientX;
     var y = e.clientY;
     cursor.style.left = x + "px";
@@ -58,10 +62,12 @@ v2.addEventListener('mouseleave', function () {
 /* Cambio de color del mouse circular */
 var btnHero = document.querySelector('.btnHero');
 btnHero.addEventListener('mouseenter', function () {
-    cursor.classList.toggle('cursorHover');
+    cursor.classList.toggle('cursorHover1');
+    cursor.classList.toggle('cursorHover2');
 });
 btnHero.addEventListener('mouseleave', function () {
-    cursor.classList.toggle('cursorHover');
+    cursor.classList.toggle('cursorHover1');
+    cursor.classList.toggle('cursorHover2');
 });
 
 
