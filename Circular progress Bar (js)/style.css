@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #121212;
+}
+.counter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 200pt;
+    height: 200pt; */
+   /*  background: transparent; */
+    z-index: 9;
+    transition: 0.5s;
+}
+.circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 165px;
+    width: 165px;
+    background: white;
+    border-radius: 50%;
+    z-index: 1;
+}
+.shadowring{
+    height: 165px;
+    width: 165px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    z-index: 99;
+}
