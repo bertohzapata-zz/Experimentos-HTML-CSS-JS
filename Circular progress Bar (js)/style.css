@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #121212;
+}
+.counter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+/*     width: 200px;
+    height: 200px; */
+    background: white;
+    z-index: 1;
+}
