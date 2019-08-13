@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.my-gallery{
+    padding: 4em;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+.my-gallery figure{
+    margin: 3px;
+    overflow: hidden;
+    position: relative;
+    /* background: #121212; */
+    /* transition: .5s; */
+}
+.gallery_img{
+    width: calc(100% + 6px);
+    height: 15em;
+    transform: translate3d(0, -20px, 0) scale(1.12);
+    transition: all .5s;
+}
+.gallery_img:hover{
+    opacity: .7;
+}
+.my-gallery h2{
+    font-size: 2em;
+}
+.my-gallery p{
+    font-size: 1.3em;
+}
+figure figcaption{
+    display: none;
+    position: absolute;
+    padding: 1em 2em;
+    top: 0;
+    color: white;
+    text-align: center;
+}
+figcaption h3{
+    font-size: 1.2em;
+    padding: .5em .7em;
+}
+
+
+
+/* .my-gallery {
+    width: 100%;
+    float: left;
+  }
+  .my-gallery img {
+    width: 100%;
+    height: auto;
+  }
+  .my-gallery figure {
+    display: block;
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 150px;
+  }
+  .my-gallery figcaption {
+    display: none;
+  } */

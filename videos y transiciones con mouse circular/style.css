@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Oxygen', sans-serif;
     cursor: none;
@@ -12,6 +11,9 @@ body {
     /* background: #eeeeee; */
     /* width: 100vw; */
     overflow-x: hidden;
+}
+a {
+    cursor: none;
 }
 h1 {
     font-family: 'Anton', sans-serif;
@@ -22,18 +24,47 @@ h2 {
 }
 header .cabecera {
     position: absolute;
+    z-index: 1;
 }
 nav {
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     width: 100%;
     position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 1;
+}
+.logo {
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+.menu{
+    list-style: none;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+
+}
+.menu li {
+    z-index: 1;
+}
+.menuLink {
+    z-index: 1;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0 1rem;
+    color: white;
 }
 
 div#cursor {
     z-index: 1;
     position: absolute;
-    width: 1rem;
-    height: 1rem;
+    /* width: 1rem;
+    height: 1rem; */
     /* border: 2px solid #393e46; */
     background: #393e46;
     /* transition: 0.1s; */
@@ -41,11 +72,26 @@ div#cursor {
     /* transition-duration: 90ms;
     transition-timing-function: ease-out; */
     pointer-events: none;
-    /* transition: .09s ease-out; */
+    /* transition: .05s ease-out; */
 }
 .cursorHover {
     width: 12rem;
     height: 12rem;
+}
+div#cursor p {
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 25%;
+    left: 15%;
+}
+.cursorHover1 {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+.cursorHover2 {
+    width: 3.1rem;
+    height: 3.1rem;
 }
 .sec1, .sec2 {
     /* background: grey; */
@@ -66,10 +112,8 @@ div#cursor {
     width: 100vw;
     height: 100vh;
 }
-
 .videoContainer {
     position: relative;
-
     /* width: 100vw; */
     height: 100vh;
     overflow: hidden;
@@ -105,10 +149,10 @@ div#cursor {
     
 }
 .videoContent {
-    z-index: 1;
+    z-index: 0;
     width: 100%;
     height: 100%;
-    background: 1px solid red;
+    /* background: 1px solid red; */
     /* text-align: center;
     display: flex;
     flex-direction: column;
@@ -142,27 +186,27 @@ div#cursor {
     position: absolute;
     width: 80%;
     height: 100%;
-    border: 1px solid royalblue;
+    /* border: 1px solid royalblue; */
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    color: white;
 }
 .heroText {
-    border: 1px solid crimson;
+    /* border: 1px solid crimson; */
+
 }
 .btnHero {
     z-index: 1;
     bottom: 10%;
     left: 50%;
-    width: 1rem;
-    height: 1rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     position: absolute;
-    background: crimson;
-    /* cursor: none; */
-    
+    border: 2px solid white;
 }
 
 

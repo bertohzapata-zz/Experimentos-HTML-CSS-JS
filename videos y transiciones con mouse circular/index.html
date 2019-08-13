@@ -14,11 +14,11 @@
 
     <header class="cabecera">
         <nav>
-            <a href="#">LOGO</a>
-            <ul>
-                <li><a href="">1</a></li>
-                <li><a href="">2</a></li>
-                <li><a href="">3</a></li>
+            <a class="logo" href="#">TbP</a>
+            <ul class="menu">
+                <li><a class="menuLink" href="www.google.com">Inicio</a></li>
+                <li><a class="menuLink" href="">Galería</a></li>
+                <li><a class="menuLink" href="">Equipo</a></li>
             </ul>
         </nav>
     </header>
@@ -30,13 +30,13 @@
         <div id="v1" class="videoContainer flex90">
 
             <div class="overlay"></div>
-            <video class="video" autoplay muted loop src="Colorful Lights.mp4"></video>
+            <video class="video" autoplay muted loop src="../assets/neon.mp4"></video>
             <div id="vc1" class="videoContent"></div>
         </div>
         <!--  -->
         <div id="v2" class="videoContainer">
             <div class="overlay"></div>
-            <video class="video" autoplay muted loop src="Pexels Videos 2790.mp4"></video>
+            <video class="video" autoplay muted loop src="../assets/concert.mp4"></video>
             <div id="vc2" class="videoContent"> </div>
         </div>
 
@@ -45,7 +45,7 @@
                 The best Party
             </h1>
             <h2 class="heroText">La mejor opción para tus eventos</h2>
-            <a id="btnH" class="btnHero" href="#"></a>
+            <a id="btHero" class="btnHero" href="#"></a>
             
         </article>
 
@@ -56,7 +56,9 @@
     <section class="sec2"></section>
 
 
-    <div id="cursor"></div>
+    <div id="cursor" class="cursorHover1">
+        <!-- <p>Descubre</p> -->
+    </div>
     
     <script src="script.js"></script>
 </body>
