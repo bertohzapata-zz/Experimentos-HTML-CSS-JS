@@ -1,15 +1,32 @@
 
-var cursor = document.getElementById('cursor');
+let cursor = document.getElementById('cursor');
 
-document.addEventListener('mousemove' , function (e){
+document.addEventListener('mousemove', function (e) {
     /* console.log(e); */
-    cursor.setAttribute("style", "top: " + (e.pageY -8) + "px; left: " + (e.pageX -8) + "px");
+    cursor.setAttribute("style", "top: " + (e.pageY - 8) + "px; left: " + (e.pageX - 8) + "px;");
     /* var x = e.clientX;
     var y = e.clientY;
     cursor.style.left = x + "px";
     cursor.style.top = y + "px"; */
 });
 
+
+/* Cambio de color del mouse circular */
+var btnHero = document.getElementById('btnH');
+btnHero.addEventListener('mouseenter', function () {
+    /* let cStyle = cursor.getAttribute("style");
+    console.log(cStyle);
+    cStyle += " width: " + 2 + "rem; " + "height: " + 2 + "rem";
+    cursor.setAttribute("style", "");
+    cursor.setAttribute("style", cStyle); */
+    cursor.classList.add("cursorHover");
+});
+btnHero.addEventListener('mouseleave', function () {
+    cursor.classList.remove('cursorHover');
+});
+btnHero.addEventListener('onclick', function () {
+    console.log('Es clickeable');
+});
 
 
 var v1 = document.getElementById('v1');
@@ -18,7 +35,7 @@ var vc1 = document.getElementById('vc1');
 var vc2 = document.getElementById('vc2');
 /* var main_text = document.querySelectorAll('.main-text'); */
 
-v1.addEventListener('click', function() {
+v1.addEventListener('click', function () {
     if (v1.classList.contains('flex90')) {
         return;
     } else {
@@ -29,7 +46,7 @@ v1.addEventListener('click', function() {
     }
     /* videoContent.classList.toggle('displayNoneToggle'); */
 });
-v2.addEventListener('click', function() {
+v2.addEventListener('click', function () {
     if (v2.classList.contains('flex90')) {
         return;
     } else {
@@ -42,26 +59,16 @@ v2.addEventListener('click', function() {
 
 
 v1.addEventListener('mouseenter', function () {
-    if (v2.classList.contains('flex90') ) v1.classList.toggle('flex15');
+    if (v2.classList.contains('flex90')) v1.classList.toggle('flex15');
 });
 v1.addEventListener('mouseleave', function () {
-    if (v2.classList.contains('flex90') ) v1.classList.toggle('flex15');
+    if (v2.classList.contains('flex90')) v1.classList.toggle('flex15');
 });
 v2.addEventListener('mouseenter', function () {
-    if (v1.classList.contains('flex90') ) v2.classList.toggle('flex15');
+    if (v1.classList.contains('flex90')) v2.classList.toggle('flex15');
 });
 v2.addEventListener('mouseleave', function () {
-    if (v1.classList.contains('flex90') ) v2.classList.toggle('flex15');
-});
-
-
-/* Cambio de color del mouse circular */
-var btnHero = document.querySelector('.btnHero');
-btnHero.addEventListener('mouseenter', function () {
-    cursor.classList.toggle('cursorHover');
-});
-btnHero.addEventListener('mouseleave', function () {
-    cursor.classList.toggle('cursorHover');
+    if (v1.classList.contains('flex90')) v2.classList.toggle('flex15');
 });
 
 

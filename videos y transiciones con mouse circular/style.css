@@ -28,6 +28,7 @@ nav {
     width: 100%;
     position: absolute;
 }
+
 div#cursor {
     z-index: 1;
     position: absolute;
@@ -37,14 +38,14 @@ div#cursor {
     background: #393e46;
     /* transition: 0.1s; */
     border-radius: 50%;
-    transition-duration: 90ms;
-    transition-timing-function: ease-out;
+    /* transition-duration: 90ms;
+    transition-timing-function: ease-out; */
     pointer-events: none;
     /* transition: .09s ease-out; */
 }
 .cursorHover {
-    width: 2rem;
-    height: 2rem;
+    width: 12rem;
+    height: 12rem;
 }
 .sec1, .sec2 {
     /* background: grey; */
@@ -138,7 +139,6 @@ div#cursor {
 }
 
 .mainContent {
-    
     position: absolute;
     width: 80%;
     height: 100%;
@@ -162,6 +162,7 @@ div#cursor {
     position: absolute;
     background: crimson;
     /* cursor: none; */
+    
 }
 
 
