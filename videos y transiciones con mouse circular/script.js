@@ -1,7 +1,7 @@
 
-var cursor = document.getElementById('cursor');
+let cursor = document.getElementById('cursor');
 
-document.addEventListener('mousemove' , function (e){
+document.addEventListener('mousemove', function (e) {
     /* console.log(e); */
     c2Cursor = getComputedStyle(cursor);
     var cWidth = c2Cursor.width;
@@ -15,6 +15,23 @@ document.addEventListener('mousemove' , function (e){
 });
 
 
+/* Cambio de color del mouse circular */
+var btnHero = document.getElementById('btnH');
+btnHero.addEventListener('mouseenter', function () {
+    /* let cStyle = cursor.getAttribute("style");
+    console.log(cStyle);
+    cStyle += " width: " + 2 + "rem; " + "height: " + 2 + "rem";
+    cursor.setAttribute("style", "");
+    cursor.setAttribute("style", cStyle); */
+    cursor.classList.add("cursorHover");
+});
+btnHero.addEventListener('mouseleave', function () {
+    cursor.classList.remove('cursorHover');
+});
+btnHero.addEventListener('onclick', function () {
+    console.log('Es clickeable');
+});
+
 
 var v1 = document.getElementById('v1');
 var v2 = document.getElementById('v2');
@@ -22,7 +39,7 @@ var vc1 = document.getElementById('vc1');
 var vc2 = document.getElementById('vc2');
 /* var main_text = document.querySelectorAll('.main-text'); */
 
-v1.addEventListener('click', function() {
+v1.addEventListener('click', function () {
     if (v1.classList.contains('flex90')) {
         return;
     } else {
@@ -33,7 +50,7 @@ v1.addEventListener('click', function() {
     }
     /* videoContent.classList.toggle('displayNoneToggle'); */
 });
-v2.addEventListener('click', function() {
+v2.addEventListener('click', function () {
     if (v2.classList.contains('flex90')) {
         return;
     } else {

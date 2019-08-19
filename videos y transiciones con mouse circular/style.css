@@ -59,6 +59,7 @@ nav {
     padding: 0 1rem;
     color: white;
 }
+
 div#cursor {
     z-index: 1;
     position: absolute;
@@ -68,10 +69,14 @@ div#cursor {
     background: #393e46;
     /* transition: 0.1s; */
     border-radius: 50%;
-    transition-duration: 90ms;
-    transition-timing-function: ease-out;
+    /* transition-duration: 90ms;
+    transition-timing-function: ease-out; */
     pointer-events: none;
     /* transition: .05s ease-out; */
+}
+.cursorHover {
+    width: 12rem;
+    height: 12rem;
 }
 div#cursor p {
     position: absolute;
