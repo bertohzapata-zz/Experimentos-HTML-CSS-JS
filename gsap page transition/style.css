@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    overflow: hidden;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: black;
+    background: lightcoral;
+    border-radius: 5rem;
+    padding: 1rem;
+    text-align: center;
+    width: 15rem;
+
+}
+.transitions {
+    display: absolute;
+    /* width: 100vw; */
+    height: 100vh;
+    /* border: 2px green solid; */
+}
+
+.transitions .page {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    left: 0%;
+    top: 0;
+}
+
+.page_p1 {
+    background-color: rgb(41, 41, 41);
+    z-index: 100;
+}
+.page_p2 {
+    background-color: rgb(24, 24, 24);
+    z-index: 200;
+}
+.page_p3 {
+    background-color: black;
+    z-index: 300;
+}
+.page_p4 {
+    background-color: black;
+    z-index: 400;
+}
+.page_p5 {
+    background-color: pink;
+    z-index: 500;
+}
+
+.part1 {
+    width: 100vw;
+    height: 100vh;
+}
+
